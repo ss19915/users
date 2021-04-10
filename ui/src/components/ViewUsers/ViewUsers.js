@@ -26,7 +26,7 @@ const ViewUsers = (props) => {
             <TablePagination
                 component='div'
                 rowsPerPageOptions={[5,10,15]}
-                count={Math.ceil(userDetails.length/rowsPerPage)}
+                count={userDetails.length}
                 rowsPerPage={rowsPerPage}
                 page={page}
                 onChangeRowsPerPage={handleChangeRowsPerPage}

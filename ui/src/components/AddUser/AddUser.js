@@ -1,10 +1,25 @@
-import { Grid, Button, TextField } from "@material-ui/core";
+import {
+  Grid,
+  Button,
+  TextField,
+  Divider,
+  Typography,
+} from "@material-ui/core";
 
 const AddUser = (props) => {
   const { onUserDetailsChange, createUser, isCreateDisabled } = props;
 
   return (
-    <Grid container spacing={2} alignItems="center" >
+    <Grid container spacing={2} justify='flex-end' alignItems="center">
+      <Grid xs={12}>
+        <Typography
+          style={{  paddingTop: "1rem" }}
+          variant="h5"
+        >
+          Add New User
+        </Typography>
+      <Divider/>
+      </Grid>
       <Grid item xs={6}>
         <TextField
           onChange={onUserDetailsChange}
